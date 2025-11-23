@@ -1,0 +1,2 @@
+python main.py --pass_channel True --training True --distortion_metric MSE --channel_type awgn --C 128 --multiple_snr 1,3,5,7
+python main.py --pass_channel True --training True --distortion_metric MSE --channel_type awgn --C 96 --multiple_snr 1,3,5,7
