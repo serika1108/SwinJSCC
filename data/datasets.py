@@ -55,7 +55,6 @@ class Test_image(Dataset):
         name = os.path.basename(image_ori)
         image = Image.open(image_ori).convert('RGB')
         self.im_height, self.im_width = image.size
-        # 测试数据集约束在128的倍数
         if self.im_height % self.mini_size != 0 or self.im_width % self.mini_size != 0:
             self.im_height = self.im_height - self.im_height % self.mini_size
             self.im_width = self.im_width - self.im_width % self.mini_size
@@ -85,5 +84,6 @@ def get_test_loader(args):
     test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
                                               batch_size=1,
                                               shuffle=False)
+
 
     return test_loader
