@@ -75,6 +75,10 @@ python main.py --distortion_metric MSE \
 对于论文中的传统图像压缩算法，可通过CompressAI的相关API实现：https://github.com/InterDigitalInc/CompressAI
 
 
+## 模型权重
+只包含`C=32,64,96`的模型权重，下载链接如下：
+https://pan.baidu.com/s/1WUqBoxgx9DHO_q_nfgFw9A?pwd=8daj
+
 
 ## 相关链接
 
